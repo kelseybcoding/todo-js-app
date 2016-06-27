@@ -1,0 +1,12 @@
+<div ng-app="app">
+  <div ng controller="todoCtrl">
+  	<h2>ToDo</h2>
+
+  	<div ng-repeat="task in tasks by $index">{{ task }}</div>
+ 		
+ 		<input ng-model="newTask">
+
+ 		<button>Add Another Task</button>
+  	
+  </div>
+</div>
